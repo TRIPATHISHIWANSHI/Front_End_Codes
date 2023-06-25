@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:tahoma;
+            background:url(https://th.bing.com/th/id/OIP.pjqWG36KsJvdZXU0AX3qVQHaNz?w=183&h=341&c=7&r=0&o=5&pid=1.7);
+            background-size: 500%;
+            background-position: -1600px -400px;
+        }
+        #form{
+            width: 250px;
+            margin: 100px auto 0 auto;
+            border: 2px solid #000;
+            border-radius:15px;
+            padding:25px;
+            background-color: rgba(0,0,0,5);
+            color: #fff;
+            box-shadow: -2px 2px 15px #000;
+        }
+        p,input{
+            font-size: 20px;
+        }
+        input{
+            width:225px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 8px;
+            background-color: #fff;
+            box-shadow: inset -2px 2px 10px #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h1>KEYBOARD EVENTS</h1>
+        <h3>onkeydown</h3><!--onkeydown will run the script first then alert will generated and after clicking ok it will append the key in text box -->
+        <input type="text" onkeydown="alert(this.value)"><!-- onkeydown will take each key event i.e. if we press backspace(remove) then it will take it as a character also and behave same as it was with other keys-->
+        <h3>onkeyup</h3><!-- onkeyip will append the  value after key is presses amd after accepting the value it will run the script also-->
+        <input type="text" onkeyup="alert(this.value)">
+        <h3>onkeypress</h3><!-- onkeyup will behave similar to onkeydown but here if we press backspace(remove) then it will remove the character simply without running the script for it-->
+        <input type="text" onkeypress="alert(this.value)">
+
+
+</body>
+</html>
